@@ -1,5 +1,8 @@
 streamlit
-pyrebase4
-sqlalchemy
-mysqlclient
-flask
+gdown
+
+jamo
+nltk
+konlpy
+pandas
+numpy

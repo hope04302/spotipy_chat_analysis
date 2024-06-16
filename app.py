@@ -1,5 +1,5 @@
 import streamlit as st
-from menu import menu
+from common_container import menu
 
 menu()
 
