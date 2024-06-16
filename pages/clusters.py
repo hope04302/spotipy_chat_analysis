@@ -17,7 +17,7 @@ for cluster_id, cluster_row in cluster_df.iterrows():
         with col2:
             show_eg_songs = song_df[song_df["cluster"] == cluster_id].iloc[:2]
             st.write(f"{show_eg_songs.iloc[0]['name']}({show_eg_songs.iloc[0]['artist']})",
-                     f"{show_eg_songs.iloc[1]['name']}({show_eg_songs.iloc[1]['artist']})")
+                     f"{show_eg_songs.iloc[1]['name']}({show_eg_songs.iloc[1]['artist']})", "등등")
 
         with col3:
             summit_btn = st.button("To Songs", key=f"summit_btn_{cluster_id}")

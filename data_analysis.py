@@ -15,7 +15,8 @@ def pickle2var(filename):
 your_df = pickle2var("your_dict.pickle")
 
 # song_df
-song_df = pickle2var("song_df.pickle")
+_song_df = pickle2var("song_df.pickle")
+song_df = _song_df.set_index("song_id")
 
 # song_df 중 기본 행들
 BASIC_COL = ['name', "album", "year", "month", "day", "artist", "genre", "lyric_writer", "composer", "arranger",
