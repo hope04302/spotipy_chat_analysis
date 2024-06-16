@@ -17,17 +17,17 @@ session = scoped_session(
 print(session())
 
 
-def delete_database_file():
-    db_path = f'{BASE_DIR}/{DB_NAME}'
-    if os.path.exists(db_path):
-        os.remove(db_path)
-        print(f"Deleted database file: {db_path}")
-    else:
-        print(f"Database file not found: {db_path}")
-
-
-# 프로그램 종료 시 삭제 함수 등록
-atexit.register(delete_database_file)
+# def delete_database_file():
+#     db_path = f'{BASE_DIR}/{DB_NAME}'
+#     if os.path.exists(db_path):
+#         os.remove(db_path)
+#         print(f"Deleted database file: {db_path}")
+#     else:
+#         print(f"Database file not found: {db_path}")
+#
+#
+# # 프로그램 종료 시 삭제 함수 등록
+# atexit.register(delete_database_file)
 
 # @event.listens_for(Engine, "connect")
 # def set_sqlite_pragma(dbapi_connect, connection_record):

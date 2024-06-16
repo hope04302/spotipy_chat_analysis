@@ -6,10 +6,12 @@ st.set_page_config(layout="wide")
 
 def authenticated_menu():
     st.sidebar.page_link("app.py", label="Home", icon=":material/home:")
-    st.sidebar.page_link("pages/about.py", label="About", icon=":material/info:")
+    st.sidebar.selectbox("pages/about.py", label="About", icon=":material/info:")
+
     st.sidebar.page_link("pages/theme.py", label="Theme", icon=":material/insert_chart:")
     st.sidebar.page_link("pages/setting.py", label="Setting", icon=":material/settings:")
     st.sidebar.page_link("pages/logout.py", label="LogOut", icon=":material/logout:")
+    st.sidebar.divider()
 
     if st.session_state.role == "admin":
         st.sidebar.page_link("pages/admin.py", label="Admin", icon=":material/manage_search:")
@@ -18,8 +20,10 @@ def authenticated_menu():
 def unauthenticated_menu():
     st.sidebar.page_link("app.py", label="Home", icon=":material/home:")
     st.sidebar.page_link("pages/about.py", label="About", icon=":material/info:")
+
     st.sidebar.page_link("pages/login.py", label="LogIn", icon=":material/login:")
     st.sidebar.page_link("pages/signin.py", label="SignIn", icon=":material/person_add:")
+    st.sidebar.divider()
 
 
 def menu():
@@ -35,3 +39,14 @@ def menu_with_redirect(allowed=("user", "admin")):
     if st.session_state.get("role") not in allowed:
         st.switch_page("app.py")
     menu()
+
+
+def set_query():
+
+    if st.query_params is not None:
+        st.session_state.query = st.query_params
+        print(st.session_state.query)
+
+    elif st.session_state.query is not None:
+        st.query_params = st.session_state.query
+        print(st.session_state.query)

@@ -1,6 +1,7 @@
 import streamlit as st
 from menu import menu_with_redirect
 from database.tables import session, User
+from database.connect import engine
 
 menu_with_redirect(allowed=None)
 
@@ -17,11 +18,11 @@ with st.form("Signin Form"):
     button = st.form_submit_button(label="submit")
 
     if button:
-        user = User(first_name=first_name, last_name=last_name, email=email, password=password, nickname=name)
-        session.add(user)
+        #user =
+        session.add(User(first_name=first_name, last_name=last_name, email=email, password=password, nickname=name))
         session.commit()
 
-        st.session_state["role"] = "role"
+        st.session_state["role"] = "user"
         st.rerun()
 
 st.write("회원 가입을 하는 것으로 사용자는 이용약관에 동의한 것으로 간주됩니다")

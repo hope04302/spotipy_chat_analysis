@@ -1,5 +1,8 @@
 streamlit
 pyrebase4
 sqlalchemy
-mysqlclient
-flask
+requests
+
+jamo
+nltk
+konlpy

@@ -23,7 +23,7 @@ def one_component(_cont, analysis):
         btn = _cont.button("입장", key=analysis.name)
 
         if btn:
-            st.session_state.cluster_id = analysis.id
+            st.session_state.query = {"id": analysis.id}
             st.switch_page("pages/theme_list.py")
 
     else:
@@ -33,14 +33,13 @@ def one_component(_cont, analysis):
         btn = _cont.button("+++++", key="_plus_area")      # 겹칠 수도...?
 
         if btn:
-            st.session_state.cluster_id = analysis.id
             st.switch_page("pages/theme_add.py")
 
 
 for i, analysis in enumerate(analyses):
     if i % 2 == 0:
         tile1 = col1.container(border=True)
-        one_component(tile1, analyses)
+        one_component(tile1, analysis)
     else:
         tile2 = col2.container(border=True)
-        one_component(tile2, analyses)
+        one_component(tile2, analysis)

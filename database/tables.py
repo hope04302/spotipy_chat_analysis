@@ -1,5 +1,5 @@
 from datetime import datetime
-from sqlalchemy import Column, Integer, String, ForeignKey, DateTime, Date, Boolean, Text, Float, JSON, Fi
+from sqlalchemy import Column, Integer, String, ForeignKey, DateTime, Date, Boolean, Text, Float, JSON
 from sqlalchemy.orm import Relationship
 from sqlalchemy.orm import declarative_base
 
@@ -95,15 +95,15 @@ class User(TimeStampedModel):
 #     song = Relationship('Song', back_populates='ranks')
 
 
-class Analysis(TimeStampedModel):
-
-    __tablename__ = 'analyses'
-
-    id = Column(Integer, primary_key=True, autoincrement=True)
-    name = Column(String(50))
-    setting = Column(JSON)
-    result_song = Column(JSON)
-    result_cluster = Column(JSON)
-
-    user_id = Column(Integer, ForeignKey('users.id', ondelete='CASCADE'), nullable=True, index=True)
-    user = Relationship('User', back_populates='analyses')
+# class Analysis(TimeStampedModel):
+#
+#     __tablename__ = 'analyses'
+#
+#     id = Column(Integer, primary_key=True, autoincrement=True)
+#     name = Column(String(50))
+#     setting = Column(JSON)
+#     result_song = Column(JSON)
+#     result_cluster = Column(JSON)
+#
+#     user_id = Column(Integer, ForeignKey('users.id', ondelete='CASCADE'), nullable=True, index=True)
+#     user = Relationship('User', back_populates='analyses')

@@ -10,5 +10,4 @@ btn_logout = st.button('Logout')
 if btn_logout:
 
     st.session_state.role = None
-    choice = 'Home'
     st.rerun()
