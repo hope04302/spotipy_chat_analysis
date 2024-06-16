@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="52686e97-79d7-4eb2-b6e3-9431b46c4dd4" name="변경" comment="Commit" />
+    <list default="true" id="52686e97-79d7-4eb2-b6e3-9431b46c4dd4" name="변경" comment="re commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,6 +30,11 @@
     "last_opened_file_path": "C:/Users/hangu/PycharmProjects/spotipy_chat_analysis"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\hangu\PycharmProjects\spotipy_chat_analysis" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -57,11 +67,29 @@
       <option name="project" value="LOCAL" />
       <updated>1718559034652</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;app.py&#10;#&#9;database/connect.py&#10;#&#9;database/tables.py&#10;#&#9;menu.py&#10;#&#9;pages/about.py&#10;#&#9;pages/logout.py&#10;#&#9;pages/signin.py&#10;#&#9;pages/theme.py&#10;#&#9;pages/theme_add.py&#10;#&#9;pages/theme_list.py&#10;#&#9;requirements.txt">
+      <option name="closed" value="true" />
+      <created>1718559134315</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1718559134315</updated>
+    </task>
+    <task id="LOCAL-00004" summary="re commit">
+      <option name="closed" value="true" />
+      <created>1718559268581</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1718559268581</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;app.py&#10;#&#9;database/connect.py&#10;#&#9;database/tables.py&#10;#&#9;menu.py&#10;#&#9;pages/about.py&#10;#&#9;pages/logout.py&#10;#&#9;pages/signin.py&#10;#&#9;pages/theme.py&#10;#&#9;pages/theme_add.py&#10;#&#9;pages/theme_list.py&#10;#&#9;requirements.txt" />
+    <MESSAGE value="re commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="re commit" />
   </component>
 </project>

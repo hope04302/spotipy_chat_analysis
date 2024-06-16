@@ -6,3 +6,4 @@ nltk
 konlpy
 pandas
 numpy
+gensim
