@@ -4,13 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="52686e97-79d7-4eb2-b6e3-9431b46c4dd4" name="변경" comment="re commit">
+    <list default="true" id="52686e97-79d7-4eb2-b6e3-9431b46c4dd4" name="변경" comment="rere commit">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common_container.py" beforeDir="false" afterPath="$PROJECT_DIR$/common_container.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_function.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_function.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/analysis_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/analysis_1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/analysis_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/analysis_2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/analysis_3.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/analysis_3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/analysis_4.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/analysis_4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/analysis_5.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/analysis_5.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/analysis_6.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/analysis_6.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/clusters.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/clusters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/songs.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/songs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -27,13 +48,68 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "last_opened_file_path": "C:/Users/hangu/PycharmProjects/spotipy_chat_analysis"
+    "Python.analysis_3.executor": "Run",
+    "Python.data_function.executor": "Run",
+    "last_opened_file_path": "C:/Users/hangu/PycharmProjects/spotipy_chat_analysis/data"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\hangu\PycharmProjects\spotipy_chat_analysis\data" />
       <recent name="C:\Users\hangu\PycharmProjects\spotipy_chat_analysis" />
     </key>
+  </component>
+  <component name="RunManager" selected="Python.analysis_3">
+    <configuration name="analysis_3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="spotipy_chat_analysis" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pages" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pages/analysis_3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="data_function" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="spotipy_chat_analysis" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_function.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.analysis_3" />
+        <item itemvalue="Python.data_function" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -83,13 +159,31 @@
       <option name="project" value="LOCAL" />
       <updated>1718559268581</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="re commit">
+      <option name="closed" value="true" />
+      <created>1718559714871</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1718559714871</updated>
+    </task>
+    <task id="LOCAL-00006" summary="rere commit">
+      <option name="closed" value="true" />
+      <created>1718572602408</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1718572602408</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit" />
     <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;app.py&#10;#&#9;database/connect.py&#10;#&#9;database/tables.py&#10;#&#9;menu.py&#10;#&#9;pages/about.py&#10;#&#9;pages/logout.py&#10;#&#9;pages/signin.py&#10;#&#9;pages/theme.py&#10;#&#9;pages/theme_add.py&#10;#&#9;pages/theme_list.py&#10;#&#9;requirements.txt" />
     <MESSAGE value="re commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="re commit" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/master'" />
+    <MESSAGE value="rere commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="rere commit" />
   </component>
 </project>

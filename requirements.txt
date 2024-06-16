@@ -1,5 +1,6 @@
 streamlit
 gdown
+requests
 
 jamo
 nltk
@@ -7,3 +8,5 @@ konlpy
 pandas
 numpy
 gensim
+scipy==1.10.1
+pyLDAvis

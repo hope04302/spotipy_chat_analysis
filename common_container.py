@@ -1,6 +1,17 @@
 import streamlit as st
+import nltk
 
-st.set_page_config(layout="wide")
+def initialize():
+
+    #st.set_page_config(layout="wide")
+
+    if st.session_state.get("initialize") is None:
+        nltk.download('punkt')
+        nltk.download('wordnet')
+        nltk.download('averaged_perceptron_tagger')
+        nltk.download('stopwords')
+
+        st.session_state["initialized"] = True
 
 
 def menu():
@@ -11,5 +22,5 @@ def menu():
     st.sidebar.page_link("pages/analysis_3.py", label="#3. Text Tokenization", icon=":material/info:")
     st.sidebar.page_link("pages/analysis_4.py", label="#4. Topic Modeling: LDA", icon=":material/info:")
     st.sidebar.page_link("pages/analysis_5.py", label="#5. K-Means Clustering", icon=":material/info:")
-    st.sidebar.page_link("pages/analysis_6.py", label="#6. New Project", icon=":material/info:")
+    # st.sidebar.page_link("pages/analysis_6.py", label="#6. New Project", icon=":material/info:")
     st.sidebar.page_link("pages/clusters.py", label="Webapp Example", icon=":material/database:")

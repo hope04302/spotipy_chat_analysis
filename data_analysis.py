@@ -15,7 +15,8 @@ def pickle2var(filename):
 your_df = pickle2var("your_dict.pickle")
 
 # song_df
-song_df = pickle2var("song_df.pickle")
+_song_df = pickle2var("song_df.pickle")
+song_df = _song_df.set_index("song_id")
 
 # song_df 중 기본 행들
 BASIC_COL = ['name', "album", "year", "month", "day", "artist", "genre", "lyric_writer", "composer", "arranger",
@@ -34,23 +35,16 @@ k_means_result_df = pd.DataFrame(data={"elbow_res": _other_data["elbow_res"],
                                  index=range(2, len(_other_data["elbow_res"]) + 2))
 
 
-@st.cache_data
-def load_lda_result_df():
+# lda_result_df
+if os.path.isfile("data/lda_result.pickle"):
+    lda_result_dict = pickle2var("lda_result.pickle")
 
-    if os.path.isfile("data/lda_result.pickle"):
-        lda_result_dict = pickle2var("lda_result.pickle")
+else:
+    _google_path = 'https://drive.google.com/uc?id='
+    _file_id = '1VCsZYH1MI-melbNd9kGKK-GN4SfNdNy8'
+    _output_name = 'data/lda_result.pickle'
+    gdown.download(_google_path + _file_id, _output_name, quiet=False)
 
-    else:
-        _google_path = 'https://drive.google.com/uc?id='
-        _file_id = '1VCsZYH1MI-melbNd9kGKK-GN4SfNdNy8'
-        _output_name = 'data/lda_result.pickle'
-        gdown.download(_google_path + _file_id, _output_name, quiet=False)
+    lda_result_dict = pickle2var("lda_result.pickle")
 
-        lda_result_dict = pickle2var("lda_result.pickle")
-
-    lda_result_df = pd.DataFrame(lda_result_dict.values(), index=lda_result_dict.keys())
-    return lda_result_df
-
-
-# lda_result
-lda_result_df = load_lda_result_df()
+lda_result_df = pd.DataFrame(lda_result_dict.values(), index=lda_result_dict.keys())
