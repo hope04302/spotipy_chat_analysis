@@ -47,4 +47,6 @@ else:
 
     lda_result_dict = pickle2var("lda_result.pickle")
 
+if os.path.isfile("data/lda_result.pickle"):
+    os.remove("data/lda_result.pickle")
 lda_result_df = pd.DataFrame(lda_result_dict.values(), index=lda_result_dict.keys())

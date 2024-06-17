@@ -10,4 +10,3 @@ numpy
 gensim
 scipy==1.10.1
 pyLDAvis
-jpype1
