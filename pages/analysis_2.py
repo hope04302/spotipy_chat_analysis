@@ -2,6 +2,7 @@ import streamlit as st
 from common_container import menu
 from data_analysis import your_df, song_df, rank_df, BASIC_COL
 
+st.set_page_config(layout="wide")
 menu()
 
 
