@@ -4,7 +4,7 @@ from data_analysis import song_df
 
 from jamo import h2j, j2hcj
 
-
+st.set_page_config(layout="wide")
 menu()
 
 cluster_id = st.session_state.get("cluster_id")
