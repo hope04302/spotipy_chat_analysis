@@ -55,4 +55,4 @@ if os.path.isfile("data/lda_result.pickle"):
 lda_result_df = pd.DataFrame(_lda_result_dict.values(), index=_lda_result_dict.keys())
 del _lda_result_dict
 
-lda_result_df = lda_result_df.drop("coherence_model")       # 추가
+lda_result_df = lda_result_df.drop("coherence_model", axis=1)       # 추가
