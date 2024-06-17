@@ -1,6 +1,6 @@
 import streamlit as st
 from common_container import menu
-st.set_page_config(layout="wide")
+
 menu()
 
 st.write("# 노래 가사 군집화를 하게 된 이유")
