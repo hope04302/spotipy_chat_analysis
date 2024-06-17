@@ -14,13 +14,13 @@ if cluster_id is None:
 
 st.session_state["show_lyrics"] = {}
 
+
 def jamo_contains(haystack, needle):
     haystack_jamo = j2hcj(h2j(haystack))
     needle_jamo = j2hcj(h2j(needle))
     return needle_jamo in haystack_jamo
 
 
-@st.cache_data
 def search_songs_by(df, value, value_options, max_count=50):
 
     song_indices = []
@@ -30,6 +30,7 @@ def search_songs_by(df, value, value_options, max_count=50):
             song_indices.append(idx)
         if len(song_indices) >= max_count:
             return df.loc[song_indices]
+
 
 @st.experimental_fragment
 def frag(idx, row):

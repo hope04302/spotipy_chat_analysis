@@ -17,6 +17,7 @@ your_df = pickle2var("your_dict.pickle")
 # song_df
 _song_df = pickle2var("song_df.pickle")
 song_df = _song_df.set_index("song_id")
+del _song_df
 
 # song_df 중 기본 행들
 BASIC_COL = ['name', "album", "year", "month", "day", "artist", "genre", "lyric_writer", "composer", "arranger",
@@ -33,11 +34,12 @@ cluster_df = pd.DataFrame({"cluster_id": range(len(_other_data["cluster_centers"
 k_means_result_df = pd.DataFrame(data={"elbow_res": _other_data["elbow_res"],
                                        "sil_res": _other_data["sil_res"]},
                                  index=range(2, len(_other_data["elbow_res"]) + 2))
+del _other_data
 
 
 # lda_result_df
 if os.path.isfile("data/lda_result.pickle"):
-    lda_result_dict = pickle2var("lda_result.pickle")
+    _lda_result_dict = pickle2var("lda_result.pickle")
 
 else:
     _google_path = 'https://drive.google.com/uc?id='
@@ -45,8 +47,10 @@ else:
     _output_name = 'data/lda_result.pickle'
     gdown.download(_google_path + _file_id, _output_name, quiet=False)
 
-    lda_result_dict = pickle2var("lda_result.pickle")
+    _lda_result_dict = pickle2var("lda_result.pickle")
 
 if os.path.isfile("data/lda_result.pickle"):
     os.remove("data/lda_result.pickle")
-lda_result_df = pd.DataFrame(lda_result_dict.values(), index=lda_result_dict.keys())
+
+lda_result_df = pd.DataFrame(_lda_result_dict.values(), index=_lda_result_dict.keys())
+del _lda_result_dict
