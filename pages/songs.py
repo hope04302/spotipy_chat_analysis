@@ -61,10 +61,10 @@ with st.form(key=f"form_{cluster_id}"):
 
     search_btn = st.form_submit_button()
 
-    if search_btn:
-        song_df_selected = search_songs_by(song_df, search, targ_options)
-        
-        if song_df_selected is not None:
-            for idx, row in song_df_selected.iterrows():
-                frag(idx, row)
+if search_btn:
+    song_df_selected = search_songs_by(song_df, search, targ_options)
+    
+    if song_df_selected is not None:
+        for idx, row in song_df_selected.iterrows():
+            frag(idx, row)
 
