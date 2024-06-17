@@ -3,8 +3,6 @@ from common_container import menu
 from data_analysis import cluster_df, song_df
 
 
-
-st.set_page_config(layout="wide")
 menu()
 
 for cluster_id, cluster_row in cluster_df.iterrows():
