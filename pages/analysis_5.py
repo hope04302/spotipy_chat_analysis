@@ -3,6 +3,7 @@ from common_container import menu
 from data_analysis import song_df, cluster_df, k_means_result_df
 import pandas as pd
 
+st.set_page_config(layout="wide")
 menu()
 
 N_CLUSTER = len(cluster_df)
