@@ -7,7 +7,6 @@ from collections import Counter
 from data_function import YoonTokenizer
 from datetime import date, timedelta
 
-st.set_page_config(layout="wide")
 menu()
 
 st.write("# 문장의 토큰화")
