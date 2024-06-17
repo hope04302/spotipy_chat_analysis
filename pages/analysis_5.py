@@ -26,11 +26,7 @@ def frag1():
 
 @st.experimental_fragment
 def frag2():
-    st.title("k-Means 기법을 통한 군집화 - 각 군집을 확인해보자")
-    st.divider()
-    st.write("각 군집을 PCA하여 표현해보자")
     choice = st.multiselect(label="cluster", options=[str(i) for i in range(N_CLUSTER)])
-
     song_df_new = song_df.copy()
     song_df_new["cluster"] = song_df["cluster"].apply(str)
     st.scatter_chart(data=song_df_new[song_df_new["cluster"].isin(choice)], x="pca_x", y="pca_y", color="cluster", height=700)
@@ -38,5 +34,9 @@ def frag2():
 
 frag1()
 st.write(); st.write(); st.write()
-frag2()
+
+st.title("k-Means 기법을 통한 군집화 - 군집 시각화")
+st.divider()
+st.write("각 군집을 PCA하여 표현해보자")
 st.dataframe(cluster_df)
+frag2()
