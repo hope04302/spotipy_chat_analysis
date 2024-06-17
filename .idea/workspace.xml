@@ -4,22 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="52686e97-79d7-4eb2-b6e3-9431b46c4dd4" name="변경" comment="rere commit">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="52686e97-79d7-4eb2-b6e3-9431b46c4dd4" name="변경" comment="final commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common_container.py" beforeDir="false" afterPath="$PROJECT_DIR$/common_container.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_analysis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_function.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_function.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/analysis_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/analysis_1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/analysis_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/analysis_2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/analysis_3.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/analysis_3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/analysis_4.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/analysis_4.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/analysis_5.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/analysis_5.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/analysis_6.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/analysis_6.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/clusters.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/clusters.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/songs.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/songs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +36,8 @@
   "keyToString": {
     "Python.analysis_3.executor": "Run",
     "Python.data_function.executor": "Run",
-    "last_opened_file_path": "C:/Users/hangu/PycharmProjects/spotipy_chat_analysis/data"
+    "last_opened_file_path": "C:/Users/hangu/PycharmProjects/spotipy_chat_analysis/data",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -175,8 +162,27 @@
       <option name="project" value="LOCAL" />
       <updated>1718572602408</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="final commit">
+      <option name="closed" value="true" />
+      <created>1718598507491</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1718598507491</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit" />
@@ -184,6 +190,7 @@
     <MESSAGE value="re commit" />
     <MESSAGE value="Merge remote-tracking branch 'origin/master'" />
     <MESSAGE value="rere commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="rere commit" />
+    <MESSAGE value="final commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="final commit" />
   </component>
 </project>
