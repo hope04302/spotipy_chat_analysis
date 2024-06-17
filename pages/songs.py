@@ -53,6 +53,10 @@ def frag(idx, row):
             st.page_link(f"https://www.melon.com/song/detail.htm?songId={idx}", label="to Melon Music")
 
 
+song_df_selected = song_df.iloc[:50]
+for idx, row in song_df_selected.iterrows():
+    frag(idx, row)
+
 with st.form(key=f"form_{cluster_id}"):
 
     search = st.text_input(label="search")
@@ -62,9 +66,11 @@ with st.form(key=f"form_{cluster_id}"):
 
     search_btn = st.form_submit_button()
 
-song_df_selected = search_songs_by(song_df, search, targ_options)
+    if search_btn:
 
-if song_df_selected is not None:
-    for idx, row in song_df_selected.iterrows():
-        frag(idx, row)
+        song_df_selected = search_songs_by(song_df, search, targ_options)
+        
+        if song_df_selected is not None:
+            for idx, row in song_df_selected.iterrows():
+                frag(idx, row)
 
