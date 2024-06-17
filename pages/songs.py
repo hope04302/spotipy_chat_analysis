@@ -31,7 +31,7 @@ def search_songs_by(df, value, value_options, max_count=50):
             return df.loc[song_indices]
 
 
-@st.experimental_fragment
+# @st.experimental_fragment
 def frag(idx, row):
     with st.container(border=True):
 
@@ -52,11 +52,6 @@ def frag(idx, row):
             st.text(f"**Lyrics**:\n{row['lyrics']}")
             st.page_link(f"https://www.melon.com/song/detail.htm?songId={idx}", label="to Melon Music")
 
-
-song_df_selected = song_df.iloc[:50]
-for idx, row in song_df_selected.iterrows():
-    frag(idx, row)
-
 with st.form(key=f"form_{cluster_id}"):
 
     search = st.text_input(label="search")
@@ -67,7 +62,6 @@ with st.form(key=f"form_{cluster_id}"):
     search_btn = st.form_submit_button()
 
     if search_btn:
-
         song_df_selected = search_songs_by(song_df, search, targ_options)
         
         if song_df_selected is not None:
