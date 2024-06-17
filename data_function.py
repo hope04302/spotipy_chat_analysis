@@ -11,14 +11,16 @@ class YoonTokenizer:
 
     print("tokenizer ready")
 
-    _url = "https://raw.githubusercontent.com/yoonkt200/FastCampusDataset/master/korean_stopwords.txt"
-    _r = requests.get(_url, stream=True)
-    kr_stopwords = _r.text.replace("\t", "\n").split('\n')
+    with st.spinner():
 
-    en_stopwords = stopwords.words('english')
-
-    okt = Okt()
-    wlem = nltk.WordNetLemmatizer()
+        _url = "https://raw.githubusercontent.com/yoonkt200/FastCampusDataset/master/korean_stopwords.txt"
+        _r = requests.get(_url, stream=True)
+        kr_stopwords = _r.text.replace("\t", "\n").split('\n')
+    
+        en_stopwords = stopwords.words('english')
+    
+        okt = Okt()
+        wlem = nltk.WordNetLemmatizer()
 
     print("complete ready")
 
