@@ -13,7 +13,7 @@ menu()
 st.sidebar.divider()
 with st.form(key="by"):
     with st.sidebar:
-        N = st.number_input("n_topic", min_value=2, max_value=50)
+        N = st.number_input("n_topic", min_value=2, max_value=49)
         st.form_submit_button("apply")
 
 
@@ -29,7 +29,7 @@ def frag1():
     col2.line_chart(data=lda_result_df, y="coherence")
 
 
-# @st.experimental_fragment
+@st.experimental_fragment
 def frag2():
     st.title("LDA 분석을 통한 토픽의 핵심 단어 지정하기")
     st.divider()
