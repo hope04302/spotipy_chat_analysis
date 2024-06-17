@@ -17,6 +17,8 @@ def initialize():
 
 def menu():
 
+    initialize()
+
     st.sidebar.page_link("app.py", label="Home", icon=":material/home:")
     st.sidebar.page_link("pages/analysis_1.py", label="#1. Introduction", icon=":material/info:")
     st.sidebar.page_link("pages/analysis_2.py", label="#2. Dataset Analysis", icon=":material/info:")
