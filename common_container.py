@@ -5,8 +5,6 @@ import jpype
 def initialize():
 
     #st.set_page_config(layout="wide")
-    if not jpype.isJVMStarted():
-        jpype.startJVM(jpype.getDefaultJVMPath(), "-Djava.class.path=your_classpath", "-Xms1g", "-Xmx2g")
 
     if st.session_state.get("initialize") is None:
         nltk.download('punkt')
