@@ -39,3 +39,4 @@ def frag2():
 frag1()
 st.write(); st.write(); st.write()
 frag2()
+st.dataframe(cluster_df)
