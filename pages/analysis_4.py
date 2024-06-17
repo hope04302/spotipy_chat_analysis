@@ -7,7 +7,6 @@ import pyLDAvis.gensim_models
 import streamlit.components.v1
 from gensim.corpora import Dictionary
 
-st.set_page_config(layout="wide")
 menu()
 
 st.sidebar.divider()
