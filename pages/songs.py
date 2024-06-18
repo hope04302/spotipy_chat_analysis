@@ -15,8 +15,8 @@ st.session_state["show_lyrics"] = {}
 
 
 def jamo_contains(haystack, needle):
-    haystack_jamo = j2hcj(h2j(haystack))
-    needle_jamo = j2hcj(h2j(needle))
+    haystack_jamo = ''.join(j2hcj(h2j(haystack)))
+    needle_jamo = ''.join(j2hcj(h2j(needle)))
     return needle_jamo in haystack_jamo
 
 
@@ -62,6 +62,7 @@ with st.form(key=f"form_{cluster_id}"):
     search_btn = st.form_submit_button()
 
 if search_btn:
+    
     song_df_selected = search_songs_by(song_df, search, targ_options)
     
     if song_df_selected is not None:
