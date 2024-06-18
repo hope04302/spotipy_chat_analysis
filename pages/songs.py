@@ -48,7 +48,7 @@ def frag(idx, row):
         btn = st.button(f"Show/Hide Lyrics for {row['name']}", key=f"button_{idx}")
         if btn:
             st.session_state.get('show_lyrics')[idx] = not st.session_state.get('show_lyrics').get(idx, 0)
-        if st.session_state.get('show_lyrics').get(idx) == 1:
+        if st.session_state.get('show_lyrics').get(idx, 0):
             st.text(f"**Lyrics**:\n{row['lyrics']}")
             st.page_link(f"https://www.melon.com/song/detail.htm?songId={idx}", label="to Melon Music")
 
