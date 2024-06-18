@@ -32,7 +32,7 @@ def search_songs_by(df, value, value_options, max_count=50):
     return df.loc[song_indices]
 
 
-# @st.experimental_fragment
+@st.experimental_fragment
 def frag(idx, row):
     with st.container(border=True):
 
