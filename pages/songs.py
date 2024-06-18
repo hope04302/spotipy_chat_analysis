@@ -25,7 +25,7 @@ def search_songs_by(df, value, value_options, max_count=50):
     song_indices = []
 
     for idx, row in df[df['cluster'] == cluster_id].iterrows():
-        print(row[value_options].astype(str))
+        
         if row[value_options].astype(str).apply(lambda x: jamo_contains(x, value)).any():
             song_indices.append(idx)
         if len(song_indices) >= max_count:
@@ -65,7 +65,7 @@ with st.form(key=f"form_{cluster_id}"):
 
 if search_btn:
     
-    song_df_selected = search_songs_by(song_df, search, targ_options)
+    song_df_selected = search_songs_by(song_df, search, targ)
     
     if song_df_selected is not None:
         for idx, row in song_df_selected.iterrows():
