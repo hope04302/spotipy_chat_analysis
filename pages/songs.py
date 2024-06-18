@@ -28,7 +28,8 @@ def search_songs_by(df, value, value_options, max_count=50):
         if row[value_options].astype(str).apply(lambda x: jamo_contains(x, value)).any():
             song_indices.append(idx)
         if len(song_indices) >= max_count:
-            return df.loc[song_indices]
+            break
+    return df.loc[song_indices]
 
 
 # @st.experimental_fragment
