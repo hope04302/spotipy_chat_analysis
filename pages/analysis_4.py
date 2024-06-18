@@ -34,6 +34,7 @@ def frag2():
     st.title("LDA 분석을 통한 토픽의 핵심 단어 지정하기")
     st.divider()
     st.write("사이드바의 n을 변화시켜가며 토픽이 어떻게 나오는지 확인해보자.")
+    st.write("주의: 오른쪽 창에서 람다값을 슬라이드하지 말고, 슬라이드 위 특장 지점을 클릭해야결과 출력에 반영됩니다.")
     id2word = Dictionary(song_df["tk_lyrics"])
 
     id2word.filter_extremes(no_below=5)
